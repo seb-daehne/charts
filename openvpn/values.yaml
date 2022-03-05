@@ -1,0 +1,19 @@
+repository: sebd/openvpn
+
+persistence:
+  enabled: true
+  # storageClassName: nfs-client
+
+ca:
+  bootstrap: true 
+  #serverName: bla.somewhere.net
+
+
+service:
+  enabled: true
+  type: NodePort
+  port: "1194"
+
+tolerations: {}
+nodeSelector: {}
+

@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Chart.Name }}-{{ .Release.Name }} 
+  labels:
+    app: {{ .Chart.Name }}-{{ .Release.Name }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Chart.Name }}-{{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Chart.Name }}-{{ .Release.Name }}
+    spec:
+      volumes:
+        - name: openvpn-config
+          persistentVolumeClaim:
+            claimName: {{ .Chart.Name }}-{{ .Release.Name }}
+        - name: ca-pass
+      {{- if .Values.nodeSelector }}
+      nodeSelector: {{- .Values.nodeSelector | toYaml | nindent 8 }}
+      {{- end }}
+      {{- if .Values.nodeSelector }}
+      tolerations: {{- .Values.tolerations | toYaml | nindent 8 }}
+      {{- end }}
+      containers:
+      - name: openvpn
+        image: "{{ .Values.repository }}:{{ .Chart.AppVersion }}"
+        {{- if .Values.ca.bootstrap }}
+        env:
+        - name: BOOTSTRAP_CA
+          value: "TRUE"
+        - name: CA_SERVERNAME
+          value: "{{ .Values.ca.serverName }}"
+        {{- end}}
+        securityContext:
+          capabilities:
+            add:
+              - NET_ADMIN
+        volumeMounts: 
+          - name: openvpn-config
+            mountPath: /etc/openvpn

@@ -1,0 +1,19 @@
+{{- if .Values.service.enabled }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Chart.Name }}-{{ .Release.Name }}
+spec:
+  selector:
+    app: {{ .Chart.Name }}-{{ .Release.Name }}
+  type: {{ .Values.service.type }}
+  ports:
+  - name: openvpn-udp
+    port: {{ .Values.service.port }}
+    targetPort: 1194
+    protocol: UDP
+  - name: openvpn-tcp
+    port: {{ .Values.service.port }}
+    targetPort: 1194
+    protocol: TCP
+{{- end }}
