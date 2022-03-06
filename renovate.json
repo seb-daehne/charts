@@ -5,7 +5,7 @@
       {
         "fileMatch": ["^.*/Chart.yaml$"],
         "matchStrings": [
-            "datasource=(?<datasource>.*?) depName=(?<depName>.*?)\\s?:end:\\sappVersion: \"(?<currentValue>.*)\"\\s"
+            "\\(datasource=(?<datasource>.*?) depName=(?<depName>.*?)\\)\\sappVersion: \"(?<currentValue>.*)\"\\s"
           ]
       }
     ],
