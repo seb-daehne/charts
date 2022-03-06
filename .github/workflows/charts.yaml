@@ -14,6 +14,41 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Get specific changed files                  # To check if any files changed in charts/ansible-runner directory
+        id: changed-files
+        uses: tj-actions/changed-files@v17.2
+        with:
+          files: |
+            charts/**
+
+      - name: update helm chart versions
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            echo "$file was changed"
+            if [[ "$file" =~ "values.yaml" ]]; then
+              echo "values file changed"
+              chart=$(echo $file | cut -d'/' -f2)
+              new_version=$(grep version charts/$chart/Chart.yaml | awk '{print $2}' | awk -F'[.]'  '{ 
+              major=$1;
+              minor=$2;
+              patch=$3;
+              patch += 1;
+              printf( "%d.%d.%d\n", major, minor, patch );
+              }')
+              echo "new version: $new_version"
+              sed -i -e 's/^version: .*$/version: '$new_version'/' charts/$chart/Chart.yaml
+          
+              git config user.name "GitHub Actions Bot"
+              git config user.email "<>"
+
+
+              git add charts/$chart/Chart.yaml
+              git commit -m "bump chart version due to values.yaml change"
+              git push origin main 
+
+            fi
+          done
+
       - name: Configure Git
         run: |
           git config user.name "$GITHUB_ACTOR"
