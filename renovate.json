@@ -4,8 +4,10 @@
     "regexManagers": [
       {
         "fileMatch": ["^.*/Chart.yaml$"],
+        "datasourceTemplate": "docker",
+        "autoReplaceStringTemplate": "appVersion: \"{{{newValue}}}\"",
         "matchStrings": [
-            "datasource=\"(?<datasource>.*?)\" depName=\"(?<depName>.*?)\"\\sappVersion: \"(?<currentValue>.*)\"\\s"
+            "depName=\"(?<depName>.*?)\"\\sappVersion: \"(?<currentValue>.*)\"\\s"
           ]
       }
     ],
