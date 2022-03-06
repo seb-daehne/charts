@@ -2,7 +2,7 @@ name: Release Charts
 
 on:
   workflow_run:
-    workflows: ["helm_chart_version_update"]
+    workflows: [Helm Chart Version Update]
     branches:
       - main
     types:
