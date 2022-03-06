@@ -18,7 +18,7 @@
         {
             "matchDatasources": ["docker"],
             "matchPackageNames": ["openvpn"],
-            "versioning": "semver"
+            "versioning": "docker"
         },
         {
           "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
