@@ -28,6 +28,6 @@ jobs:
         uses: helm/chart-releaser-action@v1.3.0
         with:
           charts_dir: .
-          charts_repo_url: https://seb-daehne.github.io/charts
+          charts_repo_url: https://www.daehne.net/charts/
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
