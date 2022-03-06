@@ -7,7 +7,7 @@
         "datasourceTemplate": "docker",
         "autoReplaceStringTemplate": "appVersion: \"{{{newValue}}}\"",
         "matchStrings": [
-            "depName=\"(?<depName>.*?)\"\\sappVersion: \"(?<currentValue>.*)\"\\s"
+            "depName=(?<depName>.*?)\\sappVersion: \"(?<currentValue>.*)\"\\s"
           ]
       }
     ],
