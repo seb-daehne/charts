@@ -1,5 +1,8 @@
 {
     "enabledManagers" : ["regex"],
+    
+    "branchConcurrentLimit": 3,
+    "dependencyDashboard": true,
 
     "regexManagers": [
       {
