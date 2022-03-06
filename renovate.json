@@ -8,9 +8,8 @@
       {
         "fileMatch": ["^.*/Chart.yaml$"],
         "datasourceTemplate": "docker",
-        "autoReplaceStringTemplate": "depName='{{{depName}}}'\nappVersion: \"{{{newValue}}}\"",
         "matchStrings": [
-            "depName: (?<depName>.*?)\\sdatasource: (?<datasource>.*?)\\sappVersion: \"(?<currentValue>.*)\"\\s"
+            "repository: \"(?<depName>.*?)\"\\sappVersion: \"(?<currentValue>.*)\"\\s"
           ]
       }
     ],
@@ -19,7 +18,7 @@
         {
             "matchDatasources": ["docker"],
             "matchPackageNames": ["openvpn"],
-            "versioning": "pep440"
+            "versioning": "semver"
         },
         {
           "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
