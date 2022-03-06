@@ -1,0 +1,12 @@
+{
+    "regexManagers": [
+      {
+        "fileMatch": ["^charts\\Chart.yaml$"],
+        "matchStrings": [
+            "datasource=(?<datasource>.*?) depName=(?<depName>.*?)\\sappVesion:(?<currentValue>.*)\\s"
+          ],
+        "depNameTemplate": "yarn",
+        "datasourceTemplate": "docker"
+      }
+    ]
+  }
