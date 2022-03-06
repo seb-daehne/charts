@@ -3,8 +3,9 @@
       {
         "fileMatch": ["^.*/Chart.yaml$"],
         "datasourceTemplate": "docker",
+        "autoReplaceStringTemplate": "depName=\"{{{depName}}}\"\nappVersion: \"{{{newValue}}}\"",
         "matchStrings": [
-            "depName=(?<depName>.*?)\\sappVersion: \"(?<currentValue>.*)\"\\s"
+            "depName: \"(?<depName>.*?)\"\\sappVersion: \"(?<currentValue>.*)\"\\s"
           ]
       }
     ],
