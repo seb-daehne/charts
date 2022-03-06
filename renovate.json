@@ -1,9 +1,12 @@
 {
+    "extends": ["config:base"],
+    "ignorePaths": ["docker/old-files/"],
+
     "regexManagers": [
       {
         "fileMatch": ["^.*/Chart.yaml$"],
         "matchStrings": [
-            "datasource=(?<datasource>.*?) depName=(?<depName>.*?)\\sappVesion:(?<currentValue>.*)\\s"
+            "datasource=(?<datasource>.*?) depName=(?<depName>.*?)\nappVersion: ?\"(?<currentValue>.*)\"\n"
           ],
         "depNameTemplate": "yarn",
         "datasourceTemplate": "docker"
