@@ -6,8 +6,7 @@ persistence:
 
 ca:
   bootstrap: true 
-  #serverName: bla.somewhere.net
-
+  serverName: example.net
 
 service:
   enabled: true
