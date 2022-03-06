@@ -8,7 +8,6 @@
         "matchStrings": [
             "datasource=(?<datasource>.*?) depName=(?<depName>.*?)\nappVersion: ?\"(?<currentValue>.*)\"\n"
           ],
-        "depNameTemplate": "yarn",
         "datasourceTemplate": "docker"
       }
     ],
