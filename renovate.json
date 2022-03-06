@@ -1,11 +1,8 @@
 {
-    "enabledManagers": ["regex"],
-
     "regexManagers": [
       {
         "fileMatch": ["^.*/Chart.yaml$"],
         "datasourceTemplate": "docker",
-        "autoReplaceStringTemplate": "appVersion: \"{{{newValue}}}\"",
         "matchStrings": [
             "depName=(?<depName>.*?)\\sappVersion: \"(?<currentValue>.*)\"\\s"
           ]
