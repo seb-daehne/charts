@@ -1,11 +1,11 @@
 {
-    "extends": ["config:base"],
+    "enabledManagers": ["regex"],
 
     "regexManagers": [
       {
         "fileMatch": ["^.*/Chart.yaml$"],
         "matchStrings": [
-            "datasource=(?<datasource>.*?) depName=(?<depName>.*?)\\sappVersion: ?.(?<currentValue>.*).\\s"
+            "datasource=(?<datasource>.*?) depName=(?<depName>.*?)\\sappVersion: \"?(?<currentValue>.*)\"?\\s"
           ]
       }
     ],
@@ -13,7 +13,7 @@
     "packageRules": [
         {
           "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-          "automerge": true
+          "automerge": false
         }
     ]
   }
