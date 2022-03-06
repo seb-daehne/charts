@@ -1,4 +1,6 @@
 {
+    "enabledManagers" : ["regex"],
+
     "regexManagers": [
       {
         "fileMatch": ["^.*/Chart.yaml$"],
