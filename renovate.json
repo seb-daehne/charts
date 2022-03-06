@@ -9,7 +9,7 @@
         "fileMatch": ["^.*/Chart.yaml$"],
         "datasourceTemplate": "docker",
         "matchStrings": [
-            "depName: (?<depName>.*?)\\sdatasource: (?<datasource>.*?)\\sappVersion: \"(?<currentValue>.*)\"\\s"
+            "depName: (?<depName>.*)\\sdatasource: (?<ds>.*)\\sappVersion: \"(?<currentValue>.*)\"\\s"
           ]
       }
     ],
