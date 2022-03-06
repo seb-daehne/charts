@@ -17,6 +17,11 @@
 
     "packageRules": [
         {
+            "matchDatasources": ["docker"],
+            "matchPackageNames": ["openvpn"],
+            "versioning": "pep440"
+        },
+        {
           "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
           "automerge": false
         }
