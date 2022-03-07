@@ -2,6 +2,15 @@ apiVersion: v1
 entries:
   mariadb:
   - apiVersion: v1
+    appVersion: 10.7.2
+    created: "2022-03-07T00:08:47.502080004Z"
+    description: mariadb
+    digest: 52ae5e1b0c1f06bece0a6d5cd8982d525afa1f8c93da67508b9c1e6762053b5f
+    name: mariadb
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/mariadb-0.1.7/mariadb-0.1.7.tgz
+    version: 0.1.7
+  - apiVersion: v1
     appVersion: 10.8@sha256:490f01279be1452f12f497a592112cb960cf0500938dbf0ea3f0135cb6728d3d
     created: "2022-03-07T00:03:59.583542484Z"
     description: mariadb
@@ -47,4 +56,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/openvpn-0.1.2/openvpn-0.1.2.tgz
     version: 0.1.2
-generated: "2022-03-07T00:03:59.583556185Z"
+generated: "2022-03-07T00:08:47.502104004Z"
