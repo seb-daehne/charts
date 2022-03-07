@@ -1,0 +1,35 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: {{ .Chart.Name }}-{{ .Release.Name }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Chart.Name }}-{{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Chart.Name }}-{{ .Release.Name }}
+    spec:
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: {{ .Chart.Name }}-{{ .Release.Name }}
+      containers:
+      - name: {{ .Chart.Name }}-{{ .Release.Name }}
+        image: "{{ .Values.image }}"
+        volumeMounts: 
+          - mountPath: "/var/lib/mysql"
+            name:  data
+        env:  
+          - name: MYSQL_DATABASE
+            value: {{ .Values.database.name }}
+          - name: MYSQL_USER
+            value: {{ .Values.database.user }}
+          - name: MYSQL_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: {{ .Values.database.secretName }}
+                key: {{ .Values.database.secretKey }}
+          - name: MYSQL_RANDOM_ROOT_PASSWORD
+            value: 'true'
