@@ -6,7 +6,7 @@
 
     "regexManagers": [
       {
-        "fileMatch": ["^charts\\Chart.yaml$"],
+        "fileMatch": ["^charts\\.*\\Chart.yaml$"],
         "datasourceTemplate": "docker",
         "matchStrings": [
             "depName: (?<depName>.*)\\sdatasource: (?<ds>.*)\\sappVersion: \"(?<currentValue>.*)\"\\s"
