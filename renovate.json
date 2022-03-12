@@ -2,7 +2,7 @@
     "enabledManagers" : ["regex"],
     
     "branchConcurrentLimit": 3,
-    "dependencyDashboard": true,
+    "dependencyDashboard": false,
 
     "regexManagers": [
       {
