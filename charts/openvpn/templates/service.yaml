@@ -16,5 +16,5 @@ spec:
   - name: openvpn
     port: {{ .Values.service.port }}
     targetPort: 1194
-    protocol: {{ .Values.config.protocol | upper | quote }}
+    protocol: {{ .Values.config.protocol | upper }}
 {{- end }}
