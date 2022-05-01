@@ -11,13 +11,10 @@ spec:
   selector:
     app: {{ .Chart.Name }}-{{ .Release.Name }}
   type: {{ .Values.service.type }}
+  externalTrafficPolicy: Local
   ports:
-  - name: openvpn-udp
+  - name: openvpn
     port: {{ .Values.service.port }}
     targetPort: 1194
-    protocol: UDP
-  - name: openvpn-tcp
-    port: {{ .Values.service.port }}
-    targetPort: 1194
-    protocol: TCP
+    protocol: {{ .Values.config.protocol | upper | quote }}
 {{- end }}

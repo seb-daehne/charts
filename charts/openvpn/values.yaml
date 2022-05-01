@@ -16,3 +16,8 @@ service:
 tolerations: {}
 nodeSelector: {}
 
+
+config:
+  protocol: tcp # or udp
+  host: vpn.example.com
+
