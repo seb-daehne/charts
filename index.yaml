@@ -39,14 +39,14 @@ entries:
     version: 0.1.6
   openvpn:
   - apiVersion: v1
-    appVersion: 3.0.3
-    created: "2022-08-23T12:05:20.899311733Z"
+    appVersion: 3.0.4
+    created: "2022-08-23T12:05:56.515064231Z"
     description: openvpn
-    digest: f5485bce0cb46f20d8d70211a69f62af97bb68fc8d5bdc4250a243076cb4cfe3
+    digest: 8d9a146fa5909771f47766e02ae62f7469e8e310bdecb05dc01c6cfc91ab409b
     name: openvpn
     urls:
-    - https://github.com/seb-daehne/charts/releases/download/openvpn-0.1.16/openvpn-0.1.16.tgz
-    version: 0.1.16
+    - https://github.com/seb-daehne/charts/releases/download/openvpn-0.1.17/openvpn-0.1.17.tgz
+    version: 0.1.17
   - apiVersion: v1
     appVersion: 3.0.3
     created: "2022-05-01T20:43:01.694426517Z"
@@ -137,4 +137,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/openvpn-0.1.2/openvpn-0.1.2.tgz
     version: 0.1.2
-generated: "2022-08-23T12:05:20.899493033Z"
+generated: "2022-08-23T12:05:56.515112331Z"
