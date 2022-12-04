@@ -3,4 +3,4 @@ apiVersion: v1
 appVersion: "10.10.2"
 description: mariadb
 name: mariadb
-version: 0.1.10
+version: 0.1.11
