@@ -1,0 +1,10 @@
+repository: nodered/node-red
+
+ingress:
+  enabled: false
+  ingressClass: nginx
+  host: some.host
+  clusterIssuer: letsencrypt
+
+persistence:
+  storageClassName: default
