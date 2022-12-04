@@ -58,6 +58,15 @@ entries:
   node-red:
   - apiVersion: v1
     appVersion: 3.0.2
+    created: "2022-12-04T12:18:06.327126035Z"
+    description: node-red
+    digest: ac2ea61642a4a26ac465b83b216fd8d418de224f57ca83ca261ac748d095517c
+    name: node-red
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/node-red-0.0.9/node-red-0.0.9.tgz
+    version: 0.0.9
+  - apiVersion: v1
+    appVersion: 3.0.2
     created: "2022-12-04T12:06:50.219578093Z"
     description: node-red
     digest: 363c0fb9aa3ab75eddeb42e05d14fc55cdc6f20c876f3dc2ab98cd5da29093e1
@@ -192,4 +201,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/openvpn-0.1.2/openvpn-0.1.2.tgz
     version: 0.1.2
-generated: "2022-12-04T12:07:44.559026947Z"
+generated: "2022-12-04T12:18:06.327193735Z"
