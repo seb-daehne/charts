@@ -22,4 +22,4 @@ spec:
                 number: 1880
           pathType: Prefix
           path: /
-{{- end }}%
+{{- end }}
