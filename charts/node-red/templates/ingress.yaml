@@ -8,6 +8,9 @@ metadata:
     cert-manager.io/cluster-issuer: {{ .Values.ingress.clusterIssuer }}
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
 spec:
+  tls:
+  - hosts:
+    - {{ .Values.ingress.host }}
   rules:
     - host: {{ .Values.ingress.host }}
       http:
