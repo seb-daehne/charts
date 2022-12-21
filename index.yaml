@@ -229,4 +229,14 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/postgres-0.1.12/postgres-0.1.12.tgz
     version: 0.1.12
-generated: "2022-12-21T12:44:17.566588139Z"
+  redis:
+  - apiVersion: v1
+    appVersion: 7.0.7
+    created: "2022-12-21T12:49:27.730938611Z"
+    description: redis
+    digest: c8b55a016eefac2451de6f5b2a775fa85bf7ebb1274232140b1951a830e4240c
+    name: redis
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/redis-0.0.5/redis-0.0.5.tgz
+    version: 0.0.5
+generated: "2022-12-21T12:49:27.731009912Z"
