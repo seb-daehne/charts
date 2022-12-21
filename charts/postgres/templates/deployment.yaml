@@ -1,0 +1,43 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: {{ .Chart.Name }}-{{ .Release.Name }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Chart.Name }}-{{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Chart.Name }}-{{ .Release.Name }}
+    spec:
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: {{ .Chart.Name }}-{{ .Release.Name }}
+      containers:
+      - name: {{ .Chart.Name }}-{{ .Release.Name }}
+        image: "{{ .Values.repository }}:{{ .Chart.AppVersion }}"
+        volumeMounts: 
+          - mountPath: "/var/lib/postgresql/data"
+            name:  data
+        env:  
+        - name: POSTGRES_PASSWORD
+          valueFrom: 
+            secretKeyRef:
+              name: {{ .Values.credentials.secretName }}
+              key: POSTGRES_PASSWORD
+        - name: POSTGRES_USER
+          valueFrom: 
+            secretKeyRef:
+              name: {{ .Values.credentials.secretName }}
+              key: POSTGRES_USER
+        - name: POSTGRES_DB
+          valueFrom: 
+            secretKeyRef:
+              name: {{ .Values.credentials.secretName }}
+              key: POSTGRES_USER
+        - name: POSTGRES_HOST_AUTH_METHOD
+          value: password
+        - name: POSTGRES_INITDB_ARGS
+          value: {{ .Values.initDbArgs }}

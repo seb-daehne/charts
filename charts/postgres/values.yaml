@@ -1,0 +1,7 @@
+repository: postgres
+
+persistence:
+  storageClass: default
+
+#credentials:
+#  secretName: some-existing-secret
