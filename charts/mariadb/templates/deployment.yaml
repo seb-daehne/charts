@@ -17,7 +17,7 @@ spec:
             claimName: {{ .Chart.Name }}-{{ .Release.Name }}
       containers:
       - name: {{ .Chart.Name }}-{{ .Release.Name }}
-        image: "{{ .Values.image }}"
+        image: "{{ .Values.repository }}:{{ .Chart.AppVersion }}"
         volumeMounts: 
           - mountPath: "/var/lib/mysql"
             name:  data
