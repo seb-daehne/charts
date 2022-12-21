@@ -1,0 +1,16 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: {{ .Chart.Name }}-{{ .Release.Name }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Chart.Name }}-{{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Chart.Name }}-{{ .Release.Name }}
+    spec:
+      containers:
+      - name: {{ .Chart.Name }}-{{ .Release.Name }}
+        image: "{{ .Values.repository }}:{{ .Chart.AppVersion }}"

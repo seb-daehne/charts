@@ -1,0 +1,4 @@
+repository: redis
+
+persistence:
+  storageClass: default
