@@ -3,6 +3,15 @@ entries:
   mariadb:
   - apiVersion: v1
     appVersion: 10.10.2
+    created: "2022-12-21T12:44:17.389101937Z"
+    description: mariadb
+    digest: 3eaf205cf8c28edb3712efb58b396bcdb3c579a010066d3e9de0f908d14ac25d
+    name: mariadb
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/mariadb-0.1.13/mariadb-0.1.13.tgz
+    version: 0.1.13
+  - apiVersion: v1
+    appVersion: 10.10.2
     created: "2022-12-04T12:07:44.558966448Z"
     description: mariadb
     digest: 2e3d4fffe0560152c62d3ee5cf9cbd7c81c16ee66f434b797e0fa1db53c43ce6
@@ -210,4 +219,14 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/openvpn-0.1.2/openvpn-0.1.2.tgz
     version: 0.1.2
-generated: "2022-12-04T12:32:57.590063376Z"
+  postgres:
+  - apiVersion: v1
+    appVersion: "14"
+    created: "2022-12-21T12:44:17.566415436Z"
+    description: postgres
+    digest: 368ff415ed9ffd2600c5d07c8b0125e6812aca8d9d71e415d27115f824b582f1
+    name: postgres
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/postgres-0.1.12/postgres-0.1.12.tgz
+    version: 0.1.12
+generated: "2022-12-21T12:44:17.566588139Z"
