@@ -50,6 +50,11 @@ spec:
                   name: {{ .Values.secrets.databaseUrl.secret }}
                   key: {{ .Values.secrets.databaseUrl.key }}
           #  {{- end}}
+            - name: ADMIN_TOKEN
+              valueFrom:
+                secretKeyRef: 
+                  name: {{ .Values.secrets.adminToken.secret }}
+                  key: {{ .Values.secrets.adminToken.key }}
             {{- range $key, $val := .Values.env }}
             - name: {{ $key }}
               value: {{ $val | quote }}
