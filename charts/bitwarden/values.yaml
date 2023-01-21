@@ -10,6 +10,17 @@ image:
   # imagePullSecrets for accessing private registries
   # pullSecrets: regcred
 
+# pointing to existing secrets where the value is the secret behind the specified keyname
+
+#secrets:
+#  smtpPassword:
+#    secret: secretName
+#    key: keyName
+#  databaseUrl: 
+#    secret: secretName
+#    key: keyName
+  
+
 env:
   SIGNUPS_ALLOWED: true
   INVITATIONS_ALLOWED: true
@@ -29,7 +40,6 @@ env:
   # SMTP_SSL
   # SMTP_EXPLICIT_TLS
   # SMTP_USERNAME
-  # SMTP_PASSWORD
   # SHOW_PASSWORD_HINT
   # WEB_VAULT_ENABLED
 
