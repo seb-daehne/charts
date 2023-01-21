@@ -29,7 +29,7 @@ spec:
   {{- range .Values.ingress.hosts }}
     - host: {{ . | quote }}
       http:
-        paths:'
+        paths:
           - path: {{ $ingressPath }}
             pathType: Prefix
             backend:
