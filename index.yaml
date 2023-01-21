@@ -284,4 +284,22 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/redis-0.0.5/redis-0.0.5.tgz
     version: 0.0.5
-generated: "2023-01-21T11:10:54.075604824Z"
+  vaultwarden:
+  - apiVersion: v1
+    appVersion: 1.27.0-alpine
+    created: "2023-01-21T11:15:18.646689572Z"
+    description: A Bitwarden Helm chart for Kubernetes
+    digest: 29ecbd0c2aa5d507ccaac7979a1bb49201a470e15133f56e3fb6d4d668e5662d
+    icon: https://raw.githubusercontent.com/bitwarden/brand/master/icons/icon.svg
+    maintainers:
+    - email: hello@codewave.eu
+      name: CodeWave
+      url: https://codewave.eu
+    name: vaultwarden
+    sources:
+    - https://github.com/dani-garcia/bitwarden_rs
+    - https://github.com/cdwv/bitwarden-k8s
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/vaultwarden-0.1.16/vaultwarden-0.1.16.tgz
+    version: 0.1.16
+generated: "2023-01-21T11:15:18.646770972Z"
