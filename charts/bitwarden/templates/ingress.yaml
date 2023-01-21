@@ -29,13 +29,13 @@ spec:
   {{- range .Values.ingress.hosts }}
     - host: {{ . | quote }}
       http:
-        paths:
+        paths:'
           - path: {{ $ingressPath }}
             pathType: Prefix
             backend:
               service:
                 name: {{ $fullName }}
                 port: 
-                  number: {{ .Values.service.port }}
+                  number: 80
   {{- end }}
 {{- end }}
