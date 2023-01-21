@@ -13,7 +13,7 @@ spec:
   loadBalancerIP: {{ .Values.service.loadBalancerIP }}
 {{- end }}
   ports:
-    - port: {{ .Values.service.port }}
+    - port: 80
       targetPort: http
       protocol: TCP
       name: http
