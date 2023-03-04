@@ -249,6 +249,15 @@ entries:
   paperless-ngx:
   - apiVersion: v1i
     appVersion: "1.13"
+    created: "2023-03-04T10:14:34.469898761Z"
+    description: Paperles NGX Chart
+    digest: 467b443316c554d991c2c7d79abc27188b530a713889c891718e553a0e42e311
+    name: paperless-ngx
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/paperless-ngx-0.1.10/paperless-ngx-0.1.10.tgz
+    version: 0.1.10
+  - apiVersion: v1i
+    appVersion: "1.13"
     created: "2023-03-02T12:54:51.966271404Z"
     description: Paperles NGX Chart
     digest: 1daecaa428f9e44ca1c437deedfebed193469570cc39e1f97da5765acd0c6f79
@@ -475,4 +484,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/vaultwarden-0.1.16/vaultwarden-0.1.16.tgz
     version: 0.1.16
-generated: "2023-03-02T12:54:51.966458603Z"
+generated: "2023-03-04T10:14:34.470020867Z"
