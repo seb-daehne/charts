@@ -57,6 +57,20 @@ spec:
                   name: {{ .Values.secrets.databasePassword.secret }}
                   key: {{ .Values.secrets.databasePassword.key }}
           #  {{- end}}
+          #  {{- if .Values.secrets.adminUser }}
+            - name: PAPERLESS_ADMIN_USER
+              valueFrom:
+                secretKeyRef: 
+                  name: {{ .Values.secrets.adminUser.secret }}
+                  key: {{ .Values.secrets.adminUser.key }}
+          #  {{- end}}
+          #  {{- if .Values.secrets.adminPass }}
+            - name: PAPERLESS_ADMIN_PASSWORD
+              valueFrom:
+                secretKeyRef: 
+                  name: {{ .Values.secrets.adminPass.secret }}
+                  key: {{ .Values.secrets.adminPass.key }}
+          #  {{- end}}
             {{- range $key, $val := .Values.env }}
             - name: {{ $key }}
               value: {{ $val | quote }}
@@ -74,18 +88,32 @@ spec:
                 #path: /
                 #port: http
           volumeMounts:
+          {{- if and .Values.nfs.enabled .Values.nfs.inputPath }}
+          - name: input
+            mountPath: /input
+          {{- end}}
           - name: data
             mountPath: /data
             {{- if and .Values.persistence.enabled .Values.persistence.subPath }}
             subPath: {{ .Values.persistence.subPath }}
-            {{- end }}            
+            {{- end }} 
       {{- if .Values.image.pullSecrets }}      
       imagePullSecrets:
         - name: {{ .Values.image.pullSecrets }}
       {{- end }}
       volumes:
+      {{- if and .Values.nfs.enabled .Values.nfs.inputPath }}
+      - name: input
+        nfs:
+          server: {{ .Values.nfs.server }}
+          path: {{ .Values.nfs.inputPath }}
+      {{- end }}
       - name: data
-        {{- if .Values.persistence.enabled }}
+        {{- if and .Values.nfs.enabled .Values.nfs.server .Values.nfs.path }}
+        nfs:
+          server: {{ .Values.nfs.server }}
+          path: {{ .Values.nfs.path }}
+        {{- else if .Values.persistence.enabled }}
         persistentVolumeClaim:
           claimName: {{ if .Values.persistence.existingClaim }}{{ .Values.persistence.existingClaim }}{{- else }}{{ template "paperless-k8s.fullname" . }}{{- end }}
         {{- else }}
