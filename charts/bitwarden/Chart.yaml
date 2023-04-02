@@ -1,6 +1,6 @@
 apiVersion: v1
 # renovate: depName: vaultwarden/server datasource: docker
-appVersion: "1.27.0-alpine"
+appVersion: "1.28.0-alpine"
 description: A Bitwarden Helm chart for Kubernetes
 name: vaultwarden
 version: 0.1.26
