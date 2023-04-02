@@ -1,4 +1,4 @@
-repository: nodered/node-red
+repository: linuxserver/smokeping
 
 ingress:
   enabled: false
