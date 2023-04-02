@@ -333,15 +333,6 @@ entries:
   smokeping:
   - apiVersion: v1
     appVersion: 2.7.3
-    created: "2023-04-02T13:52:57.441425332Z"
-    description: smokeping
-    digest: 24d912c7114526cdd49e2e6a8081b73ccba7105c746b93571225816bc2678631
-    name: smokeping
-    urls:
-    - https://github.com/seb-daehne/charts/releases/download/smokeping-0.0.17/smokeping-0.0.17.tgz
-    version: 0.0.17
-  - apiVersion: v1
-    appVersion: 2.7.3
     created: "2023-04-02T13:44:49.93506165Z"
     description: smokeping
     digest: 7ee201e418cdae70e6961a7654ceecf6801da0b205f23ae057d955883de5cb3a
@@ -350,6 +341,23 @@ entries:
     - https://github.com/seb-daehne/charts/releases/download/smokeping-0.0.16/smokeping-0.0.16.tgz
     version: 0.0.16
   vaultwarden:
+  - apiVersion: v1
+    appVersion: 1.28.0-alpine
+    created: "2023-04-02T13:53:22.198704943Z"
+    description: A Bitwarden Helm chart for Kubernetes
+    digest: d9967a87453ec44924969b7efd1353ae0ed54fbe73fb8fa18601a277faa7d792
+    icon: https://raw.githubusercontent.com/bitwarden/brand/master/icons/icon.svg
+    maintainers:
+    - email: hello@codewave.eu
+      name: CodeWave
+      url: https://codewave.eu
+    name: vaultwarden
+    sources:
+    - https://github.com/dani-garcia/bitwarden_rs
+    - https://github.com/cdwv/bitwarden-k8s
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/vaultwarden-0.1.27/vaultwarden-0.1.27.tgz
+    version: 0.1.27
   - apiVersion: v1
     appVersion: 1.27.0-alpine
     created: "2023-01-21T22:50:50.832871162Z"
@@ -503,4 +511,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/vaultwarden-0.1.16/vaultwarden-0.1.16.tgz
     version: 0.1.16
-generated: "2023-04-02T13:52:57.441726237Z"
+generated: "2023-04-02T13:53:22.199128462Z"
