@@ -29,7 +29,6 @@ spec:
           - mountPath: "/data"
             subPath: data
             name: data
-        volumeMounts: 
           - mountPath: "/config"
             subPath: config
             name: data
