@@ -360,6 +360,23 @@ entries:
     version: 0.0.16
   vaultwarden:
   - apiVersion: v1
+    appVersion: 1.28.0-alpine
+    created: "2023-04-02T14:03:08.477080414Z"
+    description: A Bitwarden Helm chart for Kubernetes
+    digest: 8df5ba8c39565a1294e1c24691167a74a4267368bf51fc7972c3e17db30f5179
+    icon: https://raw.githubusercontent.com/bitwarden/brand/master/icons/icon.svg
+    maintainers:
+    - email: hello@codewave.eu
+      name: CodeWave
+      url: https://codewave.eu
+    name: vaultwarden
+    sources:
+    - https://github.com/dani-garcia/bitwarden_rs
+    - https://github.com/cdwv/bitwarden-k8s
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/vaultwarden-0.1.29/vaultwarden-0.1.29.tgz
+    version: 0.1.29
+  - apiVersion: v1
     appVersion: 1.27.0-alpine
     created: "2023-01-21T22:50:50.832871162Z"
     description: A Bitwarden Helm chart for Kubernetes
@@ -512,4 +529,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/vaultwarden-0.1.16/vaultwarden-0.1.16.tgz
     version: 0.1.16
-generated: "2023-04-02T14:00:18.783602189Z"
+generated: "2023-04-02T14:03:08.47750209Z"
