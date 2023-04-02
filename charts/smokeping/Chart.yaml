@@ -3,4 +3,4 @@ apiVersion: v1
 appVersion: "2.7.3"
 description: smokeping
 name: smokeping
-version: 0.0.12
+version: 0.0.13
