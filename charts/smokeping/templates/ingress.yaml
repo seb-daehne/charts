@@ -19,7 +19,7 @@ spec:
             service:
               name: {{ .Chart.Name }}-{{ .Release.Name }}
               port:
-                number: 1880
+                number: 80
           pathType: Prefix
           path: /
 {{- end }}

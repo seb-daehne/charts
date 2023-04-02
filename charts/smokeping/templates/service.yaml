@@ -6,6 +6,6 @@ spec:
   selector:
     app: {{ .Chart.Name }}-{{ .Release.Name }}
   ports:
-  - name: sql
+  - name: http
     port: 80
     targetPort: 80
