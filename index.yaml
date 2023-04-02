@@ -342,6 +342,15 @@ entries:
   smokeping:
   - apiVersion: v1
     appVersion: 2.7.3
+    created: "2023-04-02T17:47:07.950062787Z"
+    description: smokeping
+    digest: 3de57819c6c4ac27ecc250fc48c74b43e3f7cfa0f8a7ac987fb8062fe2286739
+    name: smokeping
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/smokeping-0.0.23/smokeping-0.0.23.tgz
+    version: 0.0.23
+  - apiVersion: v1
+    appVersion: 2.7.3
     created: "2023-04-02T14:24:39.424476203Z"
     description: smokeping
     digest: 6133b5a1dbd0987e6870dbbb27890c03a016b8c6833f897d0cd26331398da67c
@@ -547,4 +556,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/vaultwarden-0.1.16/vaultwarden-0.1.16.tgz
     version: 0.1.16
-generated: "2023-04-02T14:24:39.424962102Z"
+generated: "2023-04-02T17:47:07.950191888Z"
