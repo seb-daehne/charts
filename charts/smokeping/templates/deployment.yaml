@@ -32,3 +32,5 @@ spec:
           - mountPath: "/config"
             subPath: config
             name: data
+        securityContext:
+          privileged: true 
