@@ -295,6 +295,15 @@ entries:
     version: 0.1.12
   redis:
   - apiVersion: v1
+    appVersion: 7.0.10
+    created: "2023-04-02T13:54:02.883851579Z"
+    description: redis
+    digest: cbb87aef38af8cb3d185b65bdbe3fe94ef1a9a7c9815deb2b4a3c16035b5b24f
+    name: redis
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/redis-0.0.9/redis-0.0.9.tgz
+    version: 0.0.9
+  - apiVersion: v1
     appVersion: 7.0.9
     created: "2023-03-02T09:10:24.975490588Z"
     description: redis
@@ -341,23 +350,6 @@ entries:
     - https://github.com/seb-daehne/charts/releases/download/smokeping-0.0.16/smokeping-0.0.16.tgz
     version: 0.0.16
   vaultwarden:
-  - apiVersion: v1
-    appVersion: 1.28.0-alpine
-    created: "2023-04-02T13:53:22.198704943Z"
-    description: A Bitwarden Helm chart for Kubernetes
-    digest: d9967a87453ec44924969b7efd1353ae0ed54fbe73fb8fa18601a277faa7d792
-    icon: https://raw.githubusercontent.com/bitwarden/brand/master/icons/icon.svg
-    maintainers:
-    - email: hello@codewave.eu
-      name: CodeWave
-      url: https://codewave.eu
-    name: vaultwarden
-    sources:
-    - https://github.com/dani-garcia/bitwarden_rs
-    - https://github.com/cdwv/bitwarden-k8s
-    urls:
-    - https://github.com/seb-daehne/charts/releases/download/vaultwarden-0.1.27/vaultwarden-0.1.27.tgz
-    version: 0.1.27
   - apiVersion: v1
     appVersion: 1.27.0-alpine
     created: "2023-01-21T22:50:50.832871162Z"
@@ -511,4 +503,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/vaultwarden-0.1.16/vaultwarden-0.1.16.tgz
     version: 0.1.16
-generated: "2023-04-02T13:53:22.199128462Z"
+generated: "2023-04-02T13:54:02.883956678Z"
