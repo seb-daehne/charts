@@ -1,0 +1,35 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: {{ .Chart.Name }}-{{ .Release.Name }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Chart.Name }}-{{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Chart.Name }}-{{ .Release.Name }}
+    spec:
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: {{ .Chart.Name }}-{{ .Release.Name }}
+      containers:
+      - name: {{ .Chart.Name }}-{{ .Release.Name }}
+        image: "{{ .Values.repository }}:{{ .Chart.AppVersion }}"
+        env:
+        - name: PUID
+          value: '1000'
+        - name: PGID
+          value: '1000'
+        - name: TZ
+          value: 'Etc/UTC'
+        volumeMounts: 
+          - mountPath: "/data"
+            subPath: data
+            name: data
+        volumeMounts: 
+          - mountPath: "/config"
+            subPath: config
+            name: data
