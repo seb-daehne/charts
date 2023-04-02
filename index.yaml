@@ -330,6 +330,16 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/redis-0.0.5/redis-0.0.5.tgz
     version: 0.0.5
+  smokeping:
+  - apiVersion: v1
+    appVersion: 2.7.3
+    created: "2023-04-02T13:44:49.93506165Z"
+    description: smokeping
+    digest: 7ee201e418cdae70e6961a7654ceecf6801da0b205f23ae057d955883de5cb3a
+    name: smokeping
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/smokeping-0.0.16/smokeping-0.0.16.tgz
+    version: 0.0.16
   vaultwarden:
   - apiVersion: v1
     appVersion: 1.27.0-alpine
@@ -484,4 +494,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/vaultwarden-0.1.16/vaultwarden-0.1.16.tgz
     version: 0.1.16
-generated: "2023-03-04T10:14:34.470020867Z"
+generated: "2023-04-02T13:44:49.935197548Z"
