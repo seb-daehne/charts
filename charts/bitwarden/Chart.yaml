@@ -3,7 +3,7 @@ apiVersion: v1
 appVersion: "1.28.1-alpine"
 description: A Bitwarden Helm chart for Kubernetes
 name: vaultwarden
-version: 0.1.29
+version: 0.1.30
 icon: https://raw.githubusercontent.com/bitwarden/brand/master/icons/icon.svg
 sources:
   - https://github.com/dani-garcia/bitwarden_rs
