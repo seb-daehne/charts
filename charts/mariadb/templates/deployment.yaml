@@ -22,6 +22,8 @@ spec:
           - mountPath: "/var/lib/mysql"
             name:  data
         env:  
+          - name: MARIADB_AUTO_UPGRADE
+            value: '1'
           - name: MYSQL_DATABASE
             value: {{ .Values.database.name }}
           - name: MYSQL_USER
