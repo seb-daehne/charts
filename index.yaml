@@ -21,6 +21,15 @@ entries:
   mariadb:
   - apiVersion: v1
     appVersion: 10.11.3
+    created: "2023-06-22T08:19:26.707143052Z"
+    description: mariadb
+    digest: bce081741f357a51c6f937d23a31fe9f06266a89c4ccd967855bfc771a5019ce
+    name: mariadb
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/mariadb-0.1.16/mariadb-0.1.16.tgz
+    version: 0.1.16
+  - apiVersion: v1
+    appVersion: 10.11.3
     created: "2023-05-13T09:36:15.62557079Z"
     description: mariadb
     digest: 434116ddd90e5ee2560bd587ab99612f4c7b4c62fe9c54d6d72ab6853b263438
@@ -645,4 +654,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/vaultwarden-0.1.16/vaultwarden-0.1.16.tgz
     version: 0.1.16
-generated: "2023-06-08T19:48:12.157595761Z"
+generated: "2023-06-22T08:19:26.707497958Z"
