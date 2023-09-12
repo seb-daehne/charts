@@ -376,6 +376,15 @@ entries:
     version: 0.1.12
   redis:
   - apiVersion: v1
+    appVersion: 7.2.1
+    created: "2023-09-12T08:04:09.164679789Z"
+    description: redis
+    digest: 8f6e31182d35edc85bfb4f3bfc972e7f8fc71491f0259ab6c32a84077041ffcb
+    name: redis
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/redis-0.0.12/redis-0.0.12.tgz
+    version: 0.0.12
+  - apiVersion: v1
     appVersion: 7.0.12
     created: "2023-07-16T07:36:29.176483415Z"
     description: redis
@@ -715,4 +724,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/vaultwarden-0.1.16/vaultwarden-0.1.16.tgz
     version: 0.1.16
-generated: "2023-09-12T08:00:36.931192867Z"
+generated: "2023-09-12T08:04:09.164861997Z"
