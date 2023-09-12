@@ -120,6 +120,15 @@ entries:
     version: 0.1.6
   node-red:
   - apiVersion: v1
+    appVersion: 3.1.0-18
+    created: "2023-09-12T13:03:12.281965114Z"
+    description: node-red
+    digest: 105bc3a71c99c94d129abe62652f5f57eb4bcb2129fe4b10beb0229f0cc0a3bc
+    name: node-red
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/node-red-0.0.12/node-red-0.0.12.tgz
+    version: 0.0.12
+  - apiVersion: v1
     appVersion: 3.0.2-18
     created: "2023-06-01T17:04:25.136527829Z"
     description: node-red
@@ -733,4 +742,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/vaultwarden-0.1.16/vaultwarden-0.1.16.tgz
     version: 0.1.16
-generated: "2023-09-12T11:05:56.413782241Z"
+generated: "2023-09-12T13:03:12.282415921Z"
