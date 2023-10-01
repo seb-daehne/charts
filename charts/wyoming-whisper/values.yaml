@@ -1,4 +1,4 @@
-repository: wyoming-whisper
+repository: rhasspy/wyoming-whisper
 
 
 model: medium-int8 
