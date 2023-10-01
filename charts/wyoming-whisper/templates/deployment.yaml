@@ -21,8 +21,8 @@ spec:
         volumeMounts: 
           - mountPath: "/data"
             name:  data
-        command:
+        args:
         - --model
         - {{ .Values.model }}
         - --language
-        - en
+        - {{ .Values.language }}

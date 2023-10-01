@@ -2,6 +2,7 @@ repository: rhasspy/wyoming-whisper
 
 
 model: medium-int8 
+language: en
 
 persistence:
   storageClassName: default
