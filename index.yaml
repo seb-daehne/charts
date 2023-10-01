@@ -742,4 +742,14 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/vaultwarden-0.1.16/vaultwarden-0.1.16.tgz
     version: 0.1.16
-generated: "2023-09-12T13:03:12.282415921Z"
+  wyoming-whisper:
+  - apiVersion: v1
+    appVersion: 1.0.0
+    created: "2023-10-01T14:19:09.702711202Z"
+    description: wwhyoming hisper
+    digest: 186afe65108fa89c819764260e716933178c1f2104d4e27836c6b3f34c2fdbd3
+    name: wyoming-whisper
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/wyoming-whisper-0.1.6/wyoming-whisper-0.1.6.tgz
+    version: 0.1.6
+generated: "2023-10-01T14:19:09.703269757Z"
