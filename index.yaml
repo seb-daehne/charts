@@ -745,6 +745,15 @@ entries:
   wyoming-whisper:
   - apiVersion: v1
     appVersion: 1.0.0
+    created: "2023-10-01T14:20:27.768894461Z"
+    description: wwhyoming hisper
+    digest: cc00115950ca2a3ca020849643cb76971f7eecb3de2f7e47d64600a2cbf1dc32
+    name: wyoming-whisper
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/wyoming-whisper-0.1.7/wyoming-whisper-0.1.7.tgz
+    version: 0.1.7
+  - apiVersion: v1
+    appVersion: 1.0.0
     created: "2023-10-01T14:19:09.702711202Z"
     description: wwhyoming hisper
     digest: 186afe65108fa89c819764260e716933178c1f2104d4e27836c6b3f34c2fdbd3
@@ -752,4 +761,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/wyoming-whisper-0.1.6/wyoming-whisper-0.1.6.tgz
     version: 0.1.6
-generated: "2023-10-01T14:19:09.703269757Z"
+generated: "2023-10-01T14:20:27.76931376Z"
