@@ -1,15 +1,7 @@
-repository: mariadb
+repository: wyoming-whisper
 
-database:
-  # secret for the db password
-  secretName: some
-  secretKey: some
 
-  #username
-  user: some
-
-  #database name
-  name: some
+model: medium-int8 
 
 persistence:
   storageClassName: default
