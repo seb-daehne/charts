@@ -3,4 +3,4 @@ apiVersion: v1
 appVersion: "16"
 description: postgres
 name: postgres
-version: 0.1.14
+version: 0.1.15
