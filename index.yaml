@@ -302,6 +302,15 @@ entries:
     version: 0.1.2
   paperless-ngx:
   - apiVersion: v1i
+    appVersion: "2.4"
+    created: "2024-01-20T10:39:24.563688657Z"
+    description: Paperles NGX Chart
+    digest: 864e8f82b19e074068d347ad03dd60c3c0679c03dd9cddef24bf1020084671a3
+    name: paperless-ngx
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/paperless-ngx-0.1.16/paperless-ngx-0.1.16.tgz
+    version: 0.1.16
+  - apiVersion: v1i
     appVersion: "2.1"
     created: "2023-12-08T16:52:05.252929333Z"
     description: Paperles NGX Chart
@@ -402,6 +411,15 @@ entries:
     - https://github.com/seb-daehne/charts/releases/download/postgres-0.1.12/postgres-0.1.12.tgz
     version: 0.1.12
   redis:
+  - apiVersion: v1
+    appVersion: 7.2.4
+    created: "2024-01-20T10:39:24.67486058Z"
+    description: redis
+    digest: 7493e866ab6a620abbe0ae70fd7a7a82a6eaa9fcc39101fc406c7848f203a3ce
+    name: redis
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/redis-0.0.14/redis-0.0.14.tgz
+    version: 0.0.14
   - apiVersion: v1
     appVersion: 7.2.3
     created: "2023-11-04T06:52:57.17509915Z"
@@ -814,4 +832,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/wyoming-whisper-0.1.6/wyoming-whisper-0.1.6.tgz
     version: 0.1.6
-generated: "2023-12-08T16:52:05.253171827Z"
+generated: "2024-01-20T10:39:24.674982258Z"
