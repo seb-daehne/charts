@@ -3,4 +3,4 @@ apiVersion: v1
 appVersion: "3.1.6-18"
 description: node-red
 name: node-red
-version: 0.0.13
+version: 0.0.14
