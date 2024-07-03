@@ -18,6 +18,16 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/bitwarden-k8s-0.1.15/bitwarden-k8s-0.1.15.tgz
     version: 0.1.15
+  home-assistant:
+  - apiVersion: v1
+    appVersion: 2024.6.4
+    created: "2024-07-03T20:51:59.910321315Z"
+    description: home assistant
+    digest: f530edc4db0f5ade91271e09f29b7862c5e54b29b9fa5edb2a97091531da2d85
+    name: home-assistant
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/home-assistant-0.1.314/home-assistant-0.1.314.tgz
+    version: 0.1.314
   mariadb:
   - apiVersion: v1
     appVersion: 10.11.7
@@ -921,4 +931,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/wyoming-whisper-0.1.6/wyoming-whisper-0.1.6.tgz
     version: 0.1.6
-generated: "2024-07-03T07:58:29.733415686Z"
+generated: "2024-07-03T20:51:59.910474633Z"
