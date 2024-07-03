@@ -129,6 +129,15 @@ entries:
     version: 0.1.6
   node-red:
   - apiVersion: v1
+    appVersion: 4.0.2-18
+    created: "2024-07-03T07:57:19.929589464Z"
+    description: node-red
+    digest: 0016d2bf59dbe540fa648404b07bd74a0abba173b0cefdafe801450015329ade
+    name: node-red
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/node-red-0.0.17/node-red-0.0.17.tgz
+    version: 0.0.17
+  - apiVersion: v1
     appVersion: 3.1.9-18
     created: "2024-04-12T18:33:27.042180003Z"
     description: node-red
@@ -903,4 +912,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/wyoming-whisper-0.1.6/wyoming-whisper-0.1.6.tgz
     version: 0.1.6
-generated: "2024-06-08T10:41:03.592119382Z"
+generated: "2024-07-03T07:57:19.929905224Z"
