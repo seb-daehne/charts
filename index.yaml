@@ -21,6 +21,15 @@ entries:
   home-assistant:
   - apiVersion: v1
     appVersion: 2024.6.4
+    created: "2024-07-03T22:06:35.366869167Z"
+    description: home assistant
+    digest: d731336adff021d5bbdb2c371622fa1c26c0e3d21032596f535f94636d802648
+    name: home-assistant
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/home-assistant-0.1.317/home-assistant-0.1.317.tgz
+    version: 0.1.317
+  - apiVersion: v1
+    appVersion: 2024.6.4
     created: "2024-07-03T21:30:25.907843071Z"
     description: home assistant
     digest: 40e1767aa708abce196c740200808e8fd6cf49eba8b187738e1c71d4d6ea63d7
@@ -356,6 +365,15 @@ entries:
     - https://github.com/seb-daehne/charts/releases/download/openvpn-0.1.2/openvpn-0.1.2.tgz
     version: 0.1.2
   paperless-ngx:
+  - apiVersion: v1
+    appVersion: "2.10"
+    created: "2024-07-03T22:06:35.526146789Z"
+    description: Paperles NGX Chart
+    digest: d1d42f55e477f7875bc49b8ca0406f2b370fee47cb200b1c56b85e8221ad4157
+    name: paperless-ngx
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/paperless-ngx-0.1.21/paperless-ngx-0.1.21.tgz
+    version: 0.1.21
   - apiVersion: v1i
     appVersion: "2.10"
     created: "2024-07-03T07:58:29.733197728Z"
@@ -940,4 +958,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/wyoming-whisper-0.1.6/wyoming-whisper-0.1.6.tgz
     version: 0.1.6
-generated: "2024-07-03T21:30:25.908041104Z"
+generated: "2024-07-03T22:06:35.526330686Z"
