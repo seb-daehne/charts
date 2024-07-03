@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ha-config
+data:
+  configuration.yaml: |+
+{{ .Files.Get .Values.files.config }}
+  automation.yaml: |+
+{{ .Files.Get .Values.files.automation }}
+  script.yaml: |+
+{{ .Files.Get .Values.files.script }}

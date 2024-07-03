@@ -1,0 +1,9 @@
+
+image:
+  repository: homeassistant/home-assistant
+  pullPolicy: IfNotPresent
+
+files:
+  config: "config/config.yaml"
+  automation:  "config/automation.yaml"
+  script: "config/script.yaml"

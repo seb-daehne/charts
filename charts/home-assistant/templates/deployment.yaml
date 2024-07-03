@@ -1,0 +1,89 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: home-assistant
+spec:
+  selector:
+    matchLabels:
+      app: home-assistant
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: home-assistant
+      annotations:
+        checksum/config1: {{ .Files.Get .Values.files.config  | sha256sum }}
+        checksum/config2: {{ .Files.Get .Values.files.automation  | sha256sum }}
+        checksum/config3: {{ .Files.Get .Values.files.script  | sha256sum }}
+    spec:
+      hostname: unifi
+      volumes:
+        - name: local-home-assistant
+          hostPath:
+            path: /data/home-assistant
+            type: Directory
+        - name: ha-config
+          configMap:
+            name: ha-config
+        - name: ha-secrets
+          configMap:
+            name: home-assistant-secrets
+      terminationGracePeriodSeconds: 10
+      containers:
+      - name: home-assistant
+        image: "{{ .Values.image.repository }}:{{ .Chart.AppVersion }}"
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 8123
+          initialDelaySeconds: 60
+          failureThreshold: 5
+          timeoutSeconds: 10        
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 8123
+          initialDelaySeconds: 60
+          failureThreshold: 5
+          timeoutSeconds: 10
+        startupProbe:
+          httpGet:
+            path: /
+            port: 8123
+          failureThreshold: 30
+          periodSeconds: 10
+        volumeMounts: 
+ #         - mountPath: "/config-2"
+ #           name:  nfs-home-assistant
+          - mountPath: "/config"
+            name: local-home-assistant
+          - mountPath: "/config-static/configuration.yaml"
+            name: ha-config
+            subPath: configuration.yaml
+          - mountPath: "/config-static/automation.yaml"
+            name: ha-config
+            subPath: automation.yaml
+          - mountPath: "/config-static/script.yaml"
+            name: ha-config
+            subPath: script.yaml
+          - mountPath: "/config-static/secrets.yaml"
+            name: ha-secrets
+            subPath: secrets.yaml
+        env:
+          - name: TZ
+            value: 'Europe/Berlin'
+        ports:
+          - name: hue
+            containerPort: 8300
+          - name: http-ha
+            containerPort: 8123
+          - name: callback
+            containerPort: 8040
+            hostPort: 8040
+      nodeSelector:
+        kubernetes.io/arch: amd64
+        kubernetes.io/hostname: box
+      tolerations:
+        - key: node-role.kubernetes.io/master
+          effect: NoSchedule
