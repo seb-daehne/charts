@@ -1,4 +1,4 @@
-apiVersion: v1i
+apiVersion: v1
 # renovate: depName: paperlessngx/paperless-ngx datasource: docker
 appVersion: "2.10"
 description: Paperles NGX Chart
