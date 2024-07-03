@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: home-assistant
+  annotations:
+    configmap.reloader.stakater.com/reload: "home-assistant-config"
 spec:
   selector:
     matchLabels:
@@ -12,10 +14,6 @@ spec:
     metadata:
       labels:
         app: home-assistant
-      annotations:
-        checksum/config1: {{ .Files.Get .Values.files.config  | sha256sum }}
-        checksum/config2: {{ .Files.Get .Values.files.automation  | sha256sum }}
-        checksum/config3: {{ .Files.Get .Values.files.script  | sha256sum }}
     spec:
       hostname: unifi
       volumes:
@@ -23,9 +21,9 @@ spec:
           hostPath:
             path: /data/home-assistant
             type: Directory
-        - name: ha-config
+        - name: home-assistant-config
           configMap:
-            name: ha-config
+            name: home-assistant-config
         - name: ha-secrets
           configMap:
             name: home-assistant-secrets
@@ -59,13 +57,13 @@ spec:
           - mountPath: "/config"
             name: local-home-assistant
           - mountPath: "/config-static/configuration.yaml"
-            name: ha-config
+            name: home-assistant-config
             subPath: configuration.yaml
           - mountPath: "/config-static/automation.yaml"
-            name: ha-config
+            name: home-assistant-config
             subPath: automation.yaml
           - mountPath: "/config-static/script.yaml"
-            name: ha-config
+            name: home-assistant-config
             subPath: script.yaml
           - mountPath: "/config-static/secrets.yaml"
             name: ha-secrets
