@@ -39,6 +39,15 @@ entries:
     version: 0.1.15
   home-assistant:
   - apiVersion: v1
+    appVersion: 2024.7.3
+    created: "2024-07-24T11:07:09.032649315Z"
+    description: home assistant
+    digest: e3fb35b4df632a5904795263375270c4853a01e738475076a10f336dcdc4c59a
+    name: home-assistant
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/home-assistant-0.1.320/home-assistant-0.1.320.tgz
+    version: 0.1.320
+  - apiVersion: v1
     appVersion: 2024.7.2
     created: "2024-07-10T21:04:44.725627932Z"
     description: home assistant
@@ -1021,4 +1030,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/wyoming-whisper-0.1.6/wyoming-whisper-0.1.6.tgz
     version: 0.1.6
-generated: "2024-07-14T21:45:57.603600386Z"
+generated: "2024-07-24T11:07:09.032867441Z"
