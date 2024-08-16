@@ -112,6 +112,15 @@ entries:
     version: 0.1.314
   mariadb:
   - apiVersion: v1
+    appVersion: 10.11.9
+    created: "2024-08-16T07:04:02.972355456Z"
+    description: mariadb
+    digest: c0d42f6f486116719edab10a968860ac77ec0eeef8f531a7e04db5152439708a
+    name: mariadb
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/mariadb-0.1.22/mariadb-0.1.22.tgz
+    version: 0.1.22
+  - apiVersion: v1
     appVersion: 10.11.7
     created: "2024-02-14T10:07:25.747082502Z"
     description: mariadb
@@ -1057,4 +1066,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/wyoming-whisper-0.1.6/wyoming-whisper-0.1.6.tgz
     version: 0.1.6
-generated: "2024-08-16T07:03:41.024982923Z"
+generated: "2024-08-16T07:04:02.972602718Z"
