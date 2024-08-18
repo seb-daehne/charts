@@ -43,9 +43,27 @@ spec:
   - name: hue
     port: 80
     targetPort: 8300
-  - name: homekit
+  - name: homekit-4
     port: 21064
     targetPort: 21064
+  - name: homekit-5
+    port: 21065
+    targetPort: 21065
+  - name: homekit-6
+    port: 21066
+    targetPort: 21066
+  - name: homekit-7
+    port: 21067
+    targetPort: 21067
+  - name: homekit-8
+    port: 21068
+    targetPort: 21068
+  - name: homekit-9
+    port: 21069
+    targetPort: 21069
+  - name: homekit-10
+    port: 21070
+    targetPort: 21070
 ---
 apiVersion: v1
 kind: Service
