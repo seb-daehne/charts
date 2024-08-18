@@ -8,7 +8,7 @@ metadata:
     nginx.org/websocket-services: "home-assistant-ws"
 spec:
   rules:
-    - host: ha.bks.rshc.de
+    - host: ha.home.rshc.de
       http:
         paths:
         - path: /api/websocket
