@@ -520,6 +520,15 @@ entries:
     version: 0.1.2
   paperless-ngx:
   - apiVersion: v1
+    appVersion: "2.12"
+    created: "2024-09-10T16:05:17.241493668Z"
+    description: Paperles NGX Chart
+    digest: f23a1b482d3c314b8ea1843f7dd29fdff716f1113ca1cc97f8c223b20410ff01
+    name: paperless-ngx
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/paperless-ngx-0.1.23/paperless-ngx-0.1.23.tgz
+    version: 0.1.23
+  - apiVersion: v1
     appVersion: "2.11"
     created: "2024-07-11T11:46:14.469478022Z"
     description: Paperles NGX Chart
@@ -1164,4 +1173,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/wyoming-whisper-0.1.6/wyoming-whisper-0.1.6.tgz
     version: 0.1.6
-generated: "2024-09-10T16:04:41.30388983Z"
+generated: "2024-09-10T16:05:17.24181537Z"
