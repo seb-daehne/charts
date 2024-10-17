@@ -938,6 +938,23 @@ entries:
     version: 0.0.16
   vaultwarden:
   - apiVersion: v1
+    appVersion: 1.32.2-alpine
+    created: "2024-10-17T16:29:10.163732891Z"
+    description: A Bitwarden Helm chart for Kubernetes
+    digest: e562e0b99213da2be2d3d9c8449c516027301e8f47f58c9c24ec08c9bb43ffdd
+    icon: https://raw.githubusercontent.com/bitwarden/brand/master/icons/icon.svg
+    maintainers:
+    - email: hello@codewave.eu
+      name: CodeWave
+      url: https://codewave.eu
+    name: vaultwarden
+    sources:
+    - https://github.com/dani-garcia/bitwarden_rs
+    - https://github.com/cdwv/bitwarden-k8s
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/vaultwarden-0.1.42/vaultwarden-0.1.42.tgz
+    version: 0.1.42
+  - apiVersion: v1
     appVersion: 1.32.1-alpine
     created: "2024-10-03T22:55:31.563324307Z"
     description: A Bitwarden Helm chart for Kubernetes
@@ -1289,4 +1306,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/wyoming-whisper-0.1.6/wyoming-whisper-0.1.6.tgz
     version: 0.1.6
-generated: "2024-10-13T14:57:28.790389307Z"
+generated: "2024-10-17T16:29:10.164094846Z"
