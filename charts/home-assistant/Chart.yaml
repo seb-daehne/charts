@@ -3,4 +3,4 @@ apiVersion: v1
 appVersion: "2024.11.3"
 description: home assistant
 name: home-assistant
-version: 0.1.335
+version: 0.1.336
