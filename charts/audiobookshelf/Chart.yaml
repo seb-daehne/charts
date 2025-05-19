@@ -3,4 +3,4 @@ apiVersion: v1
 appVersion: "2.23.0"
 description: A audiobookshelf Helm chart for Kubernetes
 name: audiobookshelf
-version: 0.1.55
+version: 0.1.56
