@@ -1108,6 +1108,15 @@ entries:
     version: 0.0.5
   smokeping:
   - apiVersion: v1
+    appVersion: 2.9.0
+    created: "2025-06-10T10:27:18.485943869Z"
+    description: smokeping
+    digest: de911b69af4cbe0f5c6b376f167c4b2e9d6a0ba82265d161f36622661da96e4e
+    name: smokeping
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/smokeping-0.0.25/smokeping-0.0.25.tgz
+    version: 0.0.25
+  - apiVersion: v1
     appVersion: 2.8.2
     created: "2023-05-19T06:59:58.072214856Z"
     description: smokeping
@@ -1600,4 +1609,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/wyoming-whisper-0.1.6/wyoming-whisper-0.1.6.tgz
     version: 0.1.6
-generated: "2025-06-10T10:26:33.897064089Z"
+generated: "2025-06-10T10:27:18.486347127Z"
