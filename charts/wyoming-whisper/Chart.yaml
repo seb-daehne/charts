@@ -3,4 +3,4 @@ apiVersion: v1
 appVersion: "2.5.0"
 description: wwhyoming hisper 
 name: wyoming-whisper
-version: 0.1.14
+version: 0.1.15
