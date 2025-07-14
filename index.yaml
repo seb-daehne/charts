@@ -990,6 +990,15 @@ entries:
     version: 0.1.12
   redis:
   - apiVersion: v1
+    appVersion: 8.0.3
+    created: "2025-07-14T06:23:56.0213103Z"
+    description: redis
+    digest: 96e5bc54f15c00bcd16456bf86c9bfbe1971d98bc329ff909f6490480486c14b
+    name: redis
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/redis-0.0.22/redis-0.0.22.tgz
+    version: 0.0.22
+  - apiVersion: v1
     appVersion: 8.0.2
     created: "2025-06-10T10:27:47.96577468Z"
     description: redis
@@ -1662,4 +1671,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/wyoming-whisper-0.1.6/wyoming-whisper-0.1.6.tgz
     version: 0.1.6
-generated: "2025-07-14T06:23:17.747012137Z"
+generated: "2025-07-14T06:23:56.02161492Z"
