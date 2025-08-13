@@ -1,6 +1,0 @@
-apiVersion: v1
-# renovate: depName: nodered/node-red datasource: docker
-appVersion: "4.0.9-18"
-description: node-red
-name: node-red
-version: 0.0.21
