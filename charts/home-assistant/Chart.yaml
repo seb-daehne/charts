@@ -1,6 +1,0 @@
-apiVersion: v1
-# renovate: depName: homeassistant/home-assistant datasource: docker
-appVersion: "2025.7.1"
-description: home assistant
-name: home-assistant
-version: 0.1.345

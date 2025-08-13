@@ -1,3 +1,0 @@
-image:
-  repository: homeassistant/home-assistant
-  pullPolicy: IfNotPresent
