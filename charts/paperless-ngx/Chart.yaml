@@ -3,4 +3,4 @@ apiVersion: v1
 appVersion: "2.18.2"
 description: Paperles NGX Chart
 name: paperless-ngx
-version: 0.1.29
+version: 0.1.30
