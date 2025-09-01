@@ -2,6 +2,15 @@ apiVersion: v1
 entries:
   audiobookshelf:
   - apiVersion: v1
+    appVersion: 2.29.0
+    created: "2025-09-01T10:27:16.724042535Z"
+    description: A audiobookshelf Helm chart for Kubernetes
+    digest: 60a5f2cd3907ffc0509be8e26040410dc28377d6bd47406fc2b68472903c9be8
+    name: audiobookshelf
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/audiobookshelf-0.1.61/audiobookshelf-0.1.61.tgz
+    version: 0.1.61
+  - apiVersion: v1
     appVersion: 2.28.0
     created: "2025-08-13T07:29:30.298206279Z"
     description: A audiobookshelf Helm chart for Kubernetes
@@ -1742,4 +1751,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/wyoming-whisper-0.1.6/wyoming-whisper-0.1.6.tgz
     version: 0.1.6
-generated: "2025-08-22T10:08:47.932568327Z"
+generated: "2025-09-01T10:27:16.724403217Z"
