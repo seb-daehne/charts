@@ -4,4 +4,4 @@ appVersion: "18"
 description: postgres
 name: postgres
 
-version: 0.1.18
+version: 0.1.19
