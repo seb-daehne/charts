@@ -1034,6 +1034,15 @@ entries:
     version: 0.1.8
   postgres:
   - apiVersion: v1
+    appVersion: "18"
+    created: "2025-10-16T11:33:36.499487803Z"
+    description: postgres
+    digest: d752e57bee92cd84b7275507894c90c0f5574afe0af9973cd4e1fea629278885
+    name: postgres
+    urls:
+    - https://github.com/seb-daehne/charts/releases/download/postgres-0.1.19/postgres-0.1.19.tgz
+    version: 0.1.19
+  - apiVersion: v1
     appVersion: "17"
     created: "2024-12-03T17:31:19.973015405Z"
     description: postgres
@@ -1787,4 +1796,4 @@ entries:
     urls:
     - https://github.com/seb-daehne/charts/releases/download/wyoming-whisper-0.1.6/wyoming-whisper-0.1.6.tgz
     version: 0.1.6
-generated: "2025-10-16T11:30:23.67885567Z"
+generated: "2025-10-16T11:33:36.49996869Z"
